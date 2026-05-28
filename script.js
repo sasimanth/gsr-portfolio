@@ -4,36 +4,49 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     
-    // 1. Mobile Menu Toggling
+    // 1. Mobile Menu Toggling (with backdrop overlay support)
     const menuIcon = document.getElementById("menu-icon");
     const navbar = document.getElementById("navbar");
+    const navOverlay = document.getElementById("nav-overlay");
     
-    if (menuIcon && navbar) {
-        menuIcon.addEventListener("click", () => {
-            navbar.classList.toggle("active");
-            
-            // Toggle hamburger icon between burger and close X
+    function toggleMenu() {
+        if (navbar) navbar.classList.toggle("active");
+        if (navOverlay) navOverlay.classList.toggle("active");
+        
+        if (menuIcon) {
             const icon = menuIcon.querySelector("i");
-            if (navbar.classList.contains("active")) {
-                icon.className = "bx bx-x";
-            } else {
-                icon.className = "bx bx-menu";
+            if (icon) {
+                if (navbar && navbar.classList.contains("active")) {
+                    icon.className = "bx bx-x";
+                } else {
+                    icon.className = "bx bx-menu";
+                }
             }
-        });
+        }
+    }
+    
+    function closeMenu() {
+        if (navbar) navbar.classList.remove("active");
+        if (navOverlay) navOverlay.classList.remove("active");
+        
+        if (menuIcon) {
+            const icon = menuIcon.querySelector("i");
+            if (icon) icon.className = "bx bx-menu";
+        }
+    }
+
+    if (menuIcon && navbar) {
+        menuIcon.addEventListener("click", toggleMenu);
+    }
+    
+    if (navOverlay) {
+        navOverlay.addEventListener("click", closeMenu);
     }
     
     // Close mobile navbar when clicking any link
     const navLinks = document.querySelectorAll(".nav-link");
     navLinks.forEach(link => {
-        link.addEventListener("click", () => {
-            if (navbar) {
-                navbar.classList.remove("active");
-            }
-            if (menuIcon) {
-                const icon = menuIcon.querySelector("i");
-                icon.className = "bx bx-menu";
-            }
-        });
+        link.addEventListener("click", closeMenu);
     });
 
     // 2. Typed.js Configuration
@@ -88,11 +101,9 @@ document.addEventListener("DOMContentLoaded", () => {
         // Header glassmorphism shadow on scroll
         if (header) {
             if (scrollY > 50) {
-                header.style.boxShadow = "0 10px 30px rgba(0, 0, 0, 0.3)";
-                header.style.padding = "1rem 10%";
+                header.classList.add("scrolled");
             } else {
-                header.style.boxShadow = "none";
-                header.style.padding = "1.25rem 10%";
+                header.classList.remove("scrolled");
             }
         }
 
