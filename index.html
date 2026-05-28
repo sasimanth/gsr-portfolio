@@ -23,6 +23,11 @@
 </head>
 
 <body>
+    <!-- Ambient Background Elements -->
+    <div class="ambient-grid"></div>
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
     <!-- Navbar Header -->
     <header class="header">
         <a href="#" class="logo">G<span class="logo-accent">S</span>R<span class="logo-dot">.</span></a>
@@ -44,10 +49,12 @@
         <!-- Hero Section -->
         <section class="home section-padding" id="home">
             <div class="home-content reveal fade-left">
-                <h3>Hello, It's Me</h3>
-                <h1>G. Sasimanth Reddy</h1>
+                <div class="hero-tagline">
+                    <span class="founder-badge"><i class='bx bx-rocket'></i> Founder & Tech Entrepreneur</span>
+                </div>
+                <h1>Building Scalable Digital Products & <span class="text-gradient">Modern User Experiences</span></h1>
                 <h3>And I'm a <span class="text"></span></h3>
-                <p>I build premium full-stack applications with a focus on polished UI, robust architectures, and startup scalability. Specialized in the MERN stack and crafting exceptional digital experiences.</p>
+                <p>Founder of Fixvo focused on crafting scalable platforms, premium interfaces, and impactful digital solutions.</p>
                 <div class="home-sci">
                     <a href="mailto:gsasimanthreddy@gmail.com" title="Email" target="_blank"><i class='bx bxs-envelope'></i></a>
                     <a href="https://wa.me/919515980170" title="WhatsApp" target="_blank"><i class='bx bxl-whatsapp'></i></a>
@@ -66,31 +73,31 @@
             </div>
         </section>
 
-        <!-- About Section -->
+        <!-- About/Vision Section -->
         <section class="about section-padding" id="about">
             <div class="about-img reveal fade-left">
                 <img src="sasi.jpeg" alt="G. Sasimanth Reddy">
             </div>
             <div class="about-text reveal fade-right">
-                <h2>About <span>Me</span></h2>
-                <h4>Full Stack Developer & Startup Builder</h4>
-                <p>I'm a passionate Full Stack Developer and Startup Builder driven by solving complex problems with clean code and interactive design. I enjoy turning wireframes into high-performance web applications and building projects from the ground up.</p>
+                <h2>Founder <span>Vision</span></h2>
+                <h4>Product-Led Engineering & System Scalability</h4>
+                <p>I build software that drives real-world value. As a founder and product-led engineer, I translate complex venture concepts into robust, scalable platforms. I specialize in bootstrapping products from zero to launch, focusing heavily on modern engineering practices, high-end interfaces, and robust systems architecture.</p>
                 
                 <div class="about-cards">
                     <div class="about-card">
-                         <i class='bx bx-graduation'></i>
-                         <h5>Education</h5>
-                         <p>CS Undergrad</p>
+                          <i class='bx bx-navigation'></i>
+                          <h5>Execution</h5>
+                          <p>Concept to Launch</p>
                     </div>
                     <div class="about-card">
-                         <i class='bx bx-rocket'></i>
-                         <h5>Vision</h5>
-                         <p>Scalable Products</p>
+                          <i class='bx bx-line-chart'></i>
+                          <h5>Product Scale</h5>
+                          <p>Growth Architecture</p>
                     </div>
                     <div class="about-card">
-                         <i class='bx bx-brain'></i>
-                         <h5>Strengths</h5>
-                         <p>MERN & Logic</p>
+                          <i class='bx bx-git-branch'></i>
+                          <h5>System Design</h5>
+                          <p>Full-Stack Native</p>
                     </div>
                 </div>
                 
@@ -101,22 +108,22 @@
         <!-- Expertise Section -->
         <section class="expertise section-padding" id="expertise">
             <div class="container-width">
-                <h1 class="sub-title reveal fade-up" id="chinna">My <span>Expertise</span></h1>
+                <h1 class="sub-title reveal fade-up" id="chinna">Core <span>Capabilities</span></h1>
                 <div class="expertise-grid reveal fade-up">
                     <div class="expertise-card">
                         <i class='bx bx-code-alt'></i>
                         <h3>Frontend Architecture</h3>
-                        <p>Building responsive, pixel-perfect, and interactive user interfaces using React.js, modern CSS/Tailwind, and state management frameworks.</p>
+                        <p>Crafting modern, high-performance, pixel-perfect web interfaces. Implementing advanced component design systems, modular state management, and fluid animations that drive user engagement.</p>
                     </div>
                     <div class="expertise-card">
                         <i class='bx bx-server'></i>
-                        <h3>Backend & APIs</h3>
-                        <p>Developing fast, scalable REST APIs and secure backend architectures using Node.js, Express.js, and robust validation structures.</p>
+                        <h3>Backend & System APIs</h3>
+                        <p>Designing secure, microservice-ready backend architectures and RESTful APIs. Implementing robust data validation, JWT authentication, and optimized server-side systems.</p>
                     </div>
                     <div class="expertise-card">
                         <i class='bx bx-data'></i>
-                        <h3>Database Design</h3>
-                        <p>Designing clean, secure schemas and optimizing queries with MongoDB. Implementing efficient data models for modern full-stack workflows.</p>
+                        <h3>Database & Scaling</h3>
+                        <p>Modeling relational and non-relational database schemas. Optimizing index design and query execution paths in MongoDB for high-throughput startup environments.</p>
                     </div>
                 </div>
             </div>
@@ -125,7 +132,7 @@
         <!-- Skills Section -->
         <section class="skills section-padding" id="skills">
             <div class="container-width">
-                <h1 class="sub-title reveal fade-up">Technical <span>Skills</span></h1>
+                <h1 class="sub-title reveal fade-up">Technology <span>Ecosystem</span></h1>
                 <div class="skills-container reveal fade-up">
                     <div class="skill-card">
                         <i class='bx bxl-react' style="color: #61dbfb;"></i>
@@ -174,13 +181,13 @@
         <!-- Projects Section -->
         <section class="projects section-padding" id="projects">
             <div class="container-width">
-                <h1 class="sub-title reveal fade-up" id="david">Latest <span>Projects</span></h1>
+                <h1 class="sub-title reveal fade-up" id="david">Featured <span>Ventures</span></h1>
                 <div class="projects-grid reveal fade-up">
-                    <!-- Project 1: Fixvo -->
-                    <div class="project-card">
+                    <!-- Project 1: Fixvo (Featured Centerpiece) -->
+                    <div class="project-card featured-project">
                         <div class="project-img-wrapper">
                             <img src="fixvo_mockup.png" alt="Fixvo - Home Services Platform">
-                            <span class="project-badge">Featured</span>
+                            <span class="project-badge showcase-badge"><i class='bx bxs-rocket'></i> Founder Venture</span>
                         </div>
                         <div class="project-info">
                             <div class="tech-badges">
@@ -191,9 +198,13 @@
                                 <span>Tailwind CSS</span>
                             </div>
                             <h3>Fixvo – Home Services Platform</h3>
-                            <p>A comprehensive platform connecting homeowners with local service professionals. Features live booking management, provider profiles, rating systems, and responsive customer dashboards.</p>
+                            <p class="project-pitch"><strong>The Product:</strong> A marketplace platform connecting homeowners with service professionals. Built to solve scheduling bottlenecks, featuring real-time booking, provider profiles, and dynamic service dashboards.</p>
+                            <div class="project-highlights">
+                                <span><i class='bx bx-check-circle'></i> 100% responsive booking rails</span>
+                                <span><i class='bx bx-check-circle'></i> Complete administrative control panels</span>
+                            </div>
                             <div class="project-links">
-                                <a href="https://github.com/sasimanth/fixvo" target="_blank" class="btn-project"><i class='bx bxl-github'></i> Code</a>
+                                <a href="https://github.com/sasimanth/fixvo" target="_blank" class="btn-project"><i class='bx bxl-github'></i> Code Repo</a>
                                 <a href="#" class="btn-project highlight-link"><i class='bx bx-link-external'></i> Live Demo</a>
                             </div>
                         </div>
@@ -202,8 +213,8 @@
                     <!-- Project 2: Portfolio -->
                     <div class="project-card">
                         <div class="project-img-wrapper">
-                            <img src="portfolio_mockup.png" alt="Interactive Developer Portfolio">
-                            <span class="project-badge">Frontend</span>
+                            <img src="portfolio_mockup.png" alt="Interactive Founder Portfolio">
+                            <span class="project-badge">Product Showcase</span>
                         </div>
                         <div class="project-info">
                             <div class="tech-badges">
@@ -212,11 +223,11 @@
                                 <span>JavaScript</span>
                                 <span>Typed.js</span>
                             </div>
-                            <h3>Interactive Developer Portfolio</h3>
-                            <p>A premium, recruiter-attractive dark portfolio showcasing my development work, technical skills, and achievements. Fully responsive with glassmorphic cards and scroll reveals.</p>
+                            <h3>Interactive Personal Brand Page</h3>
+                            <p>A premium dark brand page built for recruiters and stakeholders, highlighting system designs, product thinking, and projects. Featuring glassmorphic layouts and hardware-accelerated animations.</p>
                             <div class="project-links">
                                 <a href="https://github.com/sasimanth/portfolio" target="_blank" class="btn-project"><i class='bx bxl-github'></i> Code</a>
-                                <a href="#" class="btn-project highlight-link"><i class='bx bx-link-external'></i> Live</a>
+                                <a href="#" class="btn-project highlight-link"><i class='bx bx-link-external'></i> Live Brand</a>
                             </div>
                         </div>
                     </div>
@@ -225,7 +236,7 @@
                     <div class="project-card">
                         <div class="project-img-wrapper">
                             <img src="saas_mockup.png" alt="Upcoming SaaS Platform">
-                            <span class="project-badge">Upcoming</span>
+                            <span class="project-badge">In Development</span>
                         </div>
                         <div class="project-info">
                             <div class="tech-badges">
@@ -234,10 +245,10 @@
                                 <span>REST APIs</span>
                                 <span>JWT Auth</span>
                             </div>
-                            <h3>Upcoming SaaS Platform</h3>
-                            <p>Currently conceptualizing and building a subscription-based metrics dashboard for early-stage startup founders to track growth metrics and key user retention analytics.</p>
+                            <h3>Startup Metrics Analytics Panel</h3>
+                            <p>An analytics SaaS tool for early-stage startup founders to track user retention metrics, operational performance, and system traffic flows with clear visual charting.</p>
                             <div class="project-links">
-                                <a href="#" class="btn-project disabled"><i class='bx bxl-github'></i> Under Dev</a>
+                                <a href="#" class="btn-project disabled"><i class='bx bxl-lock-alt'></i> Building</a>
                             </div>
                         </div>
                     </div>
@@ -248,9 +259,9 @@
         <!-- Contact Section -->
         <section class="contact section-padding" id="contact">
             <div class="contact-info reveal fade-left">
-                <h2>Contact <span>Me</span></h2>
-                <h4>Let's Work Together</h4>
-                <p>I am actively seeking internship opportunities and full-stack developer roles. If you have an exciting project, want to discuss startup ideas, or want to hire me, drop a message!</p>
+                <h2>Let's Build <span>Something Meaningful</span></h2>
+                <h4>Venture & Co-founding Discussions</h4>
+                <p>I am actively seeking partnership, deployment, and co-founding opportunities. If you have an exciting scaling problem, want to talk product strategy, or want to hire me, drop a message!</p>
                 <ul class="contact-details">
                     <li>
                         <a href="mailto:gsasimanthreddy@gmail.com">
@@ -290,7 +301,7 @@
                     <div class="form-group">
                         <textarea id="message" placeholder="Your Message" required></textarea>
                     </div>
-                    <button type="submit" class="btn-box send">Send Message <i class='bx bx-paper-plane'></i></button>
+                    <button type="submit" class="btn-box send">Initiate Connection <i class='bx bx-paper-plane'></i></button>
                     <div id="form-alert" class="form-alert"></div>
                 </form>
             </div>

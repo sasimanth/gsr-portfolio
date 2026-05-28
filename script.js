@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 2. Typed.js Configuration
     if (document.querySelector(".text")) {
         new Typed(".text", {
-            strings: ["Full Stack Developer", "MERN Stack Developer", "Startup Builder", "Problem Solver"],
+            strings: ["Founder of Fixvo", "Product Architect", "Tech Entrepreneur", "Full-Stack Builder"],
             typeSpeed: 80,
             backSpeed: 40,
             backDelay: 1500,
