@@ -441,6 +441,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 24px;
 }
 
 .img-box {
@@ -1551,9 +1552,18 @@ main {
         margin-bottom: 2.25rem;
     }
     
+    .home {
+        padding-top: 9.5rem;
+    }
+    
+    .home-img {
+        margin-top: 1rem;
+        padding: 24px;
+    }
+    
     .img-box {
-        width: 300px;
-        height: 300px;
+        width: 280px;
+        height: 280px;
     }
     
     .about-img {
@@ -1689,9 +1699,13 @@ main {
         padding: 3.5rem 1rem 2.5rem;
     }
     
+    .home-img {
+        padding: 16px;
+    }
+    
     .img-box {
-        width: 220px;
-        height: 220px;
+        width: 200px;
+        height: 200px;
     }
     
     .about-img {
